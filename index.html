@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Question Prompt</title>
+  </head>
+  <body>
+    <h1>If you leave this page you are gay</h1>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function askQuestion() {
+          let response = confirm("Are you gay?");
+          if (response) {
+            alert("Hahaha, I knew it!");
+          } else {
+            askQuestion();
+          }
+        }
+        askQuestion();
+      });
+    </script>
+  </body>
+</html>
